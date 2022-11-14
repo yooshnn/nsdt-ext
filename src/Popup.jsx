@@ -4,13 +4,14 @@ import { createRoot } from "react-dom/client";
 const Popup = () => {
   return (
     <div className="Popup">
-      <h1>POPUP</h1>
-      <p>description</p>
+      <div className="bg-purple-800">
+        <h1 className="px-4 py-2 text-2xl text-white">POPUP</h1>
+      </div>
+      <div className="px-4 py-2 text-md">description</div>
     </div>
   );
 };
 
-const container = document.getElementById("container");
-const root = createRoot(container);
+const root = createRoot(document.getElementById("root"));
 
 root.render(<Popup />);
